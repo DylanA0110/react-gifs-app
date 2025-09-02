@@ -4,7 +4,33 @@ body {
   color: #fff;
   font-family: 'Montserrat Alternates', sans-serif;
 }
+/* Mejoras para navegadores en celular */
+@media (max-width: 640px) {
+  body {
+    padding: 10px;
+  }
 
+  .gifs-container {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    max-width: 100%;
+  }
+
+  .search-container input,
+  .search-container button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .previous-searches-list {
+    max-width: 100%;
+    gap: 6px;
+  }
+
+  .gif-card {
+    margin-bottom: 20px;
+  }
+}
 h1 {
   font-size: 2rem;
   font-weight: 700;
