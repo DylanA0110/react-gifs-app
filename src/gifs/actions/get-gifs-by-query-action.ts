@@ -17,6 +17,7 @@ export const getGifsByQuery = async(query:string):Promise<Gif[]>=>{
         title: gif.title,
         url: gif.images.original.url,
         width: Number(gif.images.original.width),
-        height: Number(gif.images.original.height)
+        height: Number(gif.images.original.height),
+        size: gif.images.original.size,
     }));
 };
